@@ -1,0 +1,28 @@
+git config --global user.name "ThomasM-17"
+git config --global user.email "2024111984@uac.pt"
+
+mkdir git-avaliacao
+cd git-avaliacao
+git init
+
+touch log.txt
+echo "Comandos usados:" > log.txt
+
+git remote add origin https://github.com/ThomasM-17/git-avaliacao.git
+git clone https://github.com/ThomasM-17/git-avaliacao.git
+cd git-avaliacao
+
+git add log.txt
+git commit -m "Adicionando log.txt"
+git push origin main
+
+echo "git add log.txt" >> log.txt
+git add log.txt
+git commit -m "Atualizando log.txt"
+git push origin main
+
+git checkout -b nova-feature
+echo "Criando um novo branch" >> log.txt
+git add log.txt
+git commit -m "Alteração no branch nova-feature"
+git push origin nova-feature
