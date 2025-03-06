@@ -1,3 +1,4 @@
+Tomás Melo
 Códigos usados:
 git config --global user.name "ThomasM-17"
 git config --global user.email "2024111984@uac.pt"
